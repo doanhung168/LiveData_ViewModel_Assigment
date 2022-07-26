@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="name_text_style">
+        <item name="android:textSize">@dimen/large_text_dimens</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="age_text_style">
+        <item name="android:textSize">@dimen/medium_text_dimens</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

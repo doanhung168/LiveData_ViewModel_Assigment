@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="student"
+            type="com.example.baseproject.data.model.Student" />
+
+        <variable
+            name="onClickItem"
+            type="com.example.baseproject.view.adapter.StudentAdapter.OnClickStudentItem" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="@{view -> onClickItem.onClickItem(student)}"
+        app:cardCornerRadius="@dimen/below_small_dimens"
+        app:cardElevation="@dimen/below_small_dimens">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/itemRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small_dimens">
+
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/name_text_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{@string/name(student.name)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvAge"
+                style="@style/age_text_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/below_small_dimens"
+                android:text="@{@string/age(String.valueOf(student.age))}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

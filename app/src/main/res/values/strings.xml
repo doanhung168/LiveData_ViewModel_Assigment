@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ViewModel LiveData</string>
+    <string name="textview">TextView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="name">Name: %1$s</string>
+    <string name="age">Age: %1$s</string>
+    <string name="error_message">An error occur</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="enter_student_age">Enter student age</string>
+    <string name="enter_student_name">Enter student name</string>
+    <string name="invalidate_name_message">Please, enter student name</string>
+    <string name="invalidate_age_message">Please, enter student age in correct format</string>
+    <string name="add_student_frag">Add Student</string>
+    <string name="detain_student_frag">Detail Student</string>
+    <string name="list_student_frag">List Student</string>
+</resources>
